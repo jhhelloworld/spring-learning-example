@@ -6,7 +6,14 @@
 
   <groupId>com.spring.demo</groupId>
   <artifactId>spring-learning-example</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>ssm-example</module>
+    <module>spring-example</module>
+    <module>springmvc-example</module>
+    <module>mybatis-example</module>
+  </modules>
 
   <name>spring-learning-example</name>
   <!-- FIXME change it to the mvc's website -->
