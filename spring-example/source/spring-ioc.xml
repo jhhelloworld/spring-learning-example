@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
@@ -8,9 +9,60 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- <context:component-scan base-package="sourcecode.ioc" /> -->
+    <!--  构造方法注入 -->
     <bean id="User" class="com.spring.demo.bean.User">
         <constructor-arg name="name" value="tom"></constructor-arg>
         <constructor-arg name="age" value="2"></constructor-arg>
     </bean>
+
+    <!--set 注入-->
+    <bean id="User2" class="com.spring.demo.bean.User">
+        <property name="name" value="jerry"></property>
+        <property name="age" value="1"></property>
+    </bean>
+
+
+    <!--命名空间注入-->
+    <bean id="Driver" class="com.spring.demo.bean.Driver">
+        <property name="name" value="tom"></property>
+        <property name="id" value="1"></property>
+    </bean>
+    <bean id="Car" class="com.spring.demo.bean.Car" p:num="2" p:driver-ref="Driver"></bean>
+
+    <!--引用类型-->
+    <bean id="Car2" class="com.spring.demo.bean.Car">
+        <property name="driver" ref="Driver"></property>
+        <property name="num" value="2"></property>
+    </bean>
+
+    <!--集合类型-->
+    <bean id="CollectionBean" class="com.spring.demo.bean.CollectionBean">
+        <property name="demoList">
+            <list>
+                <value>tom</value>
+                <value>jerry</value>
+            </list>
+        </property>
+        <property name="demoMap">
+            <map>
+                <entry key="name" value="tom"></entry>
+                <entry key="id" value="1"></entry>
+            </map>
+        </property>
+        <property name="demoSet">
+            <set>
+                <value>set1</value>
+                <value>set2</value>
+            </set>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="name">jerry</prop>
+                <prop key="id">1</prop>
+            </props>
+        </property>
+    </bean>
+
+
+
 </beans>
