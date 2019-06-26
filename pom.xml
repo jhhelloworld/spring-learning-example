@@ -13,6 +13,12 @@
     <module>spring-example</module>
     <module>springmvc-example</module>
     <module>mybatis-example</module>
+      <module>spring-self-transaction-xml</module>
+      <module>spring-self-transaction-annotation</module>
+    <module>spring-self-ioc-xml</module>
+      <module>spring-self-ioc-annotation</module>
+    <module>spring-self-aop</module>
+      <module>springmvc-self</module>
   </modules>
 
   <name>spring-learning-example</name>
