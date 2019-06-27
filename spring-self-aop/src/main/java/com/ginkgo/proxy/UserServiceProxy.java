@@ -1,6 +1,6 @@
-package com.itmayeidu.proxy;
+package com.ginkgo.proxy;
 
-import com.itmayiedu.service.UserService;
+import com.ginkgo.service.UserService;
 
 // 静态代理设计模式
 public class UserServiceProxy {

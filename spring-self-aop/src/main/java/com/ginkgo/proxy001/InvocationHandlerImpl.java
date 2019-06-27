@@ -1,12 +1,12 @@
-package com.itmayiedu.proxy001;
+package com.ginkgo.proxy001;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-import com.itmayiedu.service.MemberService;
-import com.itmayiedu.service.impl.MemberServiceImpl;
+import com.ginkgo.service.MemberService;
+import com.ginkgo.service.impl.MemberServiceImpl;
 
 // 每次生成动态代理类对象时,实现了InvocationHandler接口的调用处理器对象 
 public class InvocationHandlerImpl implements InvocationHandler {
@@ -17,6 +17,7 @@ public class InvocationHandlerImpl implements InvocationHandler {
 		this.target = target;
 	}
 
+	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		Object result = null;
 		System.out.println("使用jdk动态代理 开启事务");

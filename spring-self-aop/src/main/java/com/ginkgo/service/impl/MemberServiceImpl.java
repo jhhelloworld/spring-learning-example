@@ -1,9 +1,10 @@
-package com.itmayiedu.service.impl;
+package com.ginkgo.service.impl;
 
-import com.itmayiedu.service.MemberService;
+import com.ginkgo.service.MemberService;
 
 public class MemberServiceImpl implements MemberService {
 
+	@Override
 	public void memberAdd() {
 		System.out.println("memberAdd");
 

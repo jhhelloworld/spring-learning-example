@@ -1,6 +1,6 @@
-import com.itmayeidu.proxy.UserServiceProxy;
-import com.itmayiedu.service.UserService;
-import com.itmayiedu.service.impl.UserServiceImpl;
+import com.ginkgo.proxy.UserServiceProxy;
+import com.ginkgo.service.UserService;
+import com.ginkgo.service.impl.UserServiceImpl;
 
 public class Test001 {
 

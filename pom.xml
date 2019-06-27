@@ -19,6 +19,7 @@
       <module>spring-self-ioc-annotation</module>
     <module>spring-self-aop</module>
       <module>springmvc-self</module>
+    <module>spring-test</module>
   </modules>
 
   <name>spring-learning-example</name>

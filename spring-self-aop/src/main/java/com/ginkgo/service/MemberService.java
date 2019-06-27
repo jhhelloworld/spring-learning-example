@@ -1,4 +1,4 @@
-package com.itmayiedu.service;
+package com.ginkgo.service;
 
 public interface MemberService {
 
