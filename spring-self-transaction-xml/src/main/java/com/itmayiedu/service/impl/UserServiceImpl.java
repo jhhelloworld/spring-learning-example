@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
 		// 注意事项： 在使用spring事务的时候，service 不要try 最将异常抛出给外层aop 异常通知接受回滚
 		try {
 			userDao.add("test001", 20);
-			int i = 1 / 0;
+			//int i = 1 / 0;
 			System.out.println("################");
 			userDao.add("test002", 21);
 		} catch (Exception e) {

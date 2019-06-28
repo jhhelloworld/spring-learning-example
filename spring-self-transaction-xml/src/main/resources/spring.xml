@@ -16,9 +16,9 @@
 	<!-- 1. 数据源对象: C3P0连接池 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 		<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
-		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test"></property>
+		<property name="jdbcUrl" value="jdbc:mysql://47.105.148.86:3306/test"></property>
 		<property name="user" value="root"></property>
-		<property name="password" value="root"></property>
+		<property name="password" value="000000"></property>
 	</bean>
 
 	<!-- 2. JdbcTemplate工具类实例 -->
